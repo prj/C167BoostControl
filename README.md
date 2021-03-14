@@ -20,6 +20,9 @@ The frequency at which the PID is executed basically defines the scale of the un
 You need to re-configure a PWM output. Usually on ME7 with a boosted engine PW1 is the N75 output, on N/A they use that output for the manifold changeover flap, see the example file on how to do this.  
 Any native output writes to the PWM need to be disabled also (CC 00).  
 
+## Hardware
+Just use a normal N75 from e.g. 1.8T and wire it into the manifold changeover output.
+
 ## Description of cal parameters from asm
 **fixdcmap** - Fixed DC map for application mode  
 **fixdcflag** - When set to 1 the PID is turned off and fixdcmap values are output directly  
