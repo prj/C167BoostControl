@@ -12,8 +12,11 @@ Custom boost PID controller implementation targeted for use in Bosch ME7 control
 - Application mode for calibrating precontrol - open loop duty per RPM
 
 ## Installation
+Keil C167 assembler can be used to assemble the file.  
+  
 The main function should be placed into a scheduled task, that gets run not less than every 20ms.  
 The frequency at which the PID is executed basically defines the scale of the units in the P, I and D maps.  
+  
 You need to re-configure a PWM output. Usually on ME7 with a boosted engine PW1 is the N75 output, on N/A they use that output for the manifold changeover flap, see the example file on how to do this.  
 Any native output writes to the PWM need to be disabled also (CC 00).  
 
