@@ -10,6 +10,7 @@ Custom boost PID controller implementation targeted for use in Bosch ME7 control
 - Operation windowing for on/off
 - Runs from pssol_w as setpoint and ps_w as actual measurement, compatible with MAF or MAP
 - Application mode for calibrating precontrol - open loop duty per RPM
+- Anti wind-up, D-kick prevention
 
 ## Installation
 Keil C167 assembler can be used to assemble the file.  
